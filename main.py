@@ -45,7 +45,7 @@ def filter_profanity(input_text: TextInput):
     
     # Prepare payload for Sapling API
     payload = {
-        "key": SAPLING_API_KEY,
+        "key": API_KEY,
         "text": normalized_text
     }
 
