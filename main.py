@@ -1,13 +1,16 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import requests
+import os
 
 # Initialize FastAPI app
 app = FastAPI()
 
 # Sapling API settings
-SAPLING_API_KEY = "SICCY2TMCVS8EI95UEQL7NVZVG2JZCGU"
-SAPLING_API_URL = "https://api.sapling.ai/api/v1/profanity"
+SAPLING_API_KEY= os.environ.get("SAPLING_API_KEY")
+SAPLING_API_URL= os.environ.get("SAPLING_API_URL")
+# SAPLING_API_KEY = "SICCY2TMCVS8EI95UEQL7NVZVG2JZCGU"
+# SAPLING_API_URL = "https://api.sapling.ai/api/v1/profanity"
 
 # Request Model
 class TextInput(BaseModel):
