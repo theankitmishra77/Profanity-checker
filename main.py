@@ -7,8 +7,8 @@ import os
 app = FastAPI()
 
 # Sapling API settings
-SAPLING_API_KEY= os.environ.get("SAPLING_API_KEY")
-SAPLING_API_URL= os.environ.get("SAPLING_API_URL")
+API_KEY= os.environ.get("API_KEY")
+API_URL= os.environ.get("API_URL")
 # SAPLING_API_KEY = "SICCY2TMCVS8EI95UEQL7NVZVG2JZCGU"
 # SAPLING_API_URL = "https://api.sapling.ai/api/v1/profanity"
 
